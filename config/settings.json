@@ -1,0 +1,48 @@
+{
+  "system": {
+    "name": "HoneyGuard",
+    "version": "1.0.0",
+    "environment": "Academic Sandbox / Evaluation Environment",
+    "group": "Group 15",
+    "institution": "SLIIT Faculty of Computing"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "name": "honeyguard_db",
+    "user": "root"
+  },
+  "monitoring": {
+    "recursive": true,
+    "polling_fallback": false,
+    "ignore_patterns": [
+      "*.tmp",
+      "*.crswap",
+      "~*",
+      "*.log"
+    ]
+  },
+  "containment": {
+    "auto_containment_default": false,
+    "process_kill_timeout_seconds": 3.0,
+    "quarantine_directory": "data/quarantine"
+  },
+  "allowlist": {
+    "process_names": [
+      "python.exe",
+      "pythonw.exe",
+      "py.exe",
+      "explorer.exe",
+      "svchost.exe",
+      "System",
+      "System Idle Process",
+      "csrss.exe",
+      "services.exe",
+      "lsass.exe",
+      "smss.exe",
+      "taskmgr.exe",
+      "Code.exe",
+      "Antigravity.exe"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+# HoneyGuard Dependencies
+# Python 3.12+ / 3.13 Compatible
+
+# Filesystem & Process Telemetry
+watchdog>=5.0.0
+psutil>=6.0.0
+
+# Database Persistence (MySQL / MariaDB)
+pymysql>=1.1.0
+cryptography>=43.0.0
+
+# Environment & Settings
+python-dotenv>=1.0.0
+
+# Document & Decoy Generation
+python-docx>=1.1.0
+xlsxwriter>=3.2.0
+
+# Analytics, Visualizations & Benchmarking
+matplotlib>=3.9.0
+numpy>=2.0.0
+
+# Testing & Quality Assurance
+pytest>=8.0.0

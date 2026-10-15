@@ -1,0 +1,36 @@
+{
+  "risk_threshold": 70,
+  "weights": {
+    "honeytoken_interaction": 40,
+    "high_frequency_file_activity": 25,
+    "rename_extension_change": 20,
+    "content_entropy_change": 18
+  },
+  "sliding_window": {
+    "window_seconds": 3.0,
+    "frequency_threshold_files": 10
+  },
+  "entropy": {
+    "threshold": 7.2,
+    "delta_threshold": 2.5
+  },
+  "risk_levels": {
+    "LOW": [0, 39],
+    "MEDIUM": [40, 69],
+    "HIGH": [70, 89],
+    "CRITICAL": [90, 1000]
+  },
+  "suspicious_extensions": [
+    ".locked",
+    ".crypto",
+    ".crypted",
+    ".enc",
+    ".ransom",
+    ".wnry",
+    ".wcry",
+    ".lockbit",
+    ".blackcat",
+    ".phobos",
+    ".makop"
+  ]
+}
